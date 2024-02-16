@@ -35,7 +35,7 @@ jobs:
 #          - build_variant: "mt7621-usb"
 #            targets: "MI-R3G"
           - build_variant: "mt7628"
-            targets: "MI-4"
+            targets: "MI-4C"
 #            targets: "HC5861B MI-NANO MZ-R13 MZ-R13P 360P2 HC5761A HC5661A"
     steps:
       - name: Checkout main            # 导入主分支
