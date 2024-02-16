@@ -15,7 +15,7 @@ env:
   images_dir: /opt/images                                       # 固件目录
   work_dir: /opt/padavan/trunk                                  # 工作目录
   config_dir: /opt/padavan/trunk/configs/templates              # 设备模板目录
-  src_git: https://github.com/hanwckf/rt-n56u.git               # 源码地址
+  src_git: https://github.com/jie1jie/rt-n56u_1.git               # 源码地址
 
 jobs:
   build:
@@ -32,9 +32,10 @@ jobs:
 #            targets: "PSG1208 PSG1218 NEWIFI-MINI MI-MINI MI-3 OYE-001 5K-W20"
 #          - build_variant: "mt7621"
 #            targets: "K2P_nano K2P DIR-878 RM2100 CR660x"
-          - build_variant: "mt7621-usb"
-            targets: "MI-R3G"
-#          - build_variant: "mt7628"
+#          - build_variant: "mt7621-usb"
+#            targets: "MI-R3G"
+          - build_variant: "mt7628"
+            targets: "MI-4"
 #            targets: "HC5861B MI-NANO MZ-R13 MZ-R13P 360P2 HC5761A HC5661A"
     steps:
       - name: Checkout main            # 导入主分支
