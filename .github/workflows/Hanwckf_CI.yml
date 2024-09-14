@@ -29,7 +29,9 @@ jobs:
       matrix:
         include:
           - build_variant: "mt7621"
-            targets: "CR6608"
+            targets: "CR660X"          
+          - build_variant: "mt7621"
+            targets: "CR660X"
     steps:
       - name: Checkout main            # 导入主分支
         uses: actions/checkout@v2
